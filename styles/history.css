@@ -1,0 +1,153 @@
+body {
+    background-color: #e0f7fa;
+}
+
+#history {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #343a40;
+    margin: 20px 0;
+}
+
+table {
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+
+th:hover {
+    background-color: #0056b3;
+}
+
+th a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-icon {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Status Colors */
+.paid {
+    color: green;
+    font-weight: bold;
+}
+
+.not-paid {
+    color: red;
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.cancelled, .rejected {
+    color: grey;
+    font-weight: bold;
+}
+
+/* Button Styling for Actions */
+.action-link {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.action-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.payment-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.payment-btn:hover {
+    background-color: #218838;
+}
+
+.invoice-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.invoice-btn:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

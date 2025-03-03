@@ -1,0 +1,12 @@
+{
+    "name": "sharathr/ocean_pearls",
+    "description": "\"Hotel booking management system.\"",
+    "autoload": {
+        "psr-4": {
+            "Sharathr\\OceanPearls\\": "src/"
+        }
+    },
+    "require": {
+        "setasign/fpdf": "^1.8"
+    }
+}

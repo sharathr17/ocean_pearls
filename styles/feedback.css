@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Feedback Form */
+form {
+    width: 60%;
+    max-width: 700px;
+    min-width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Label and Text Styling */
+p {
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 95%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.center-msg {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.success-msg {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    form {
+        width: 75%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
