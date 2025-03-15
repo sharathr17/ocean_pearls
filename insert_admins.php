@@ -1,30 +1,27 @@
 <?php
-$servername = "localhost";
-$username = "root";  // Default XAMPP user
-$password = "";      // Default XAMPP password (empty)
-$dbname = "ocean_pearls";
+include "includes/db_connect.php";
 
-// Connect to database
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Define the password
+$password = "123abc";
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Hash passwords
-$hashedPassword = password_hash("123abc", PASSWORD_BCRYPT);
+// Hash the password
+$hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
 // Insert admins
 $sql = "INSERT INTO admins (admin_name, password) VALUES 
-        ('sharath', '$hashedPassword'), 
-        ('ahad', '$hashedPassword'), 
-        ('sudeep', '$hashedPassword')";
+        ('sharath', ?), 
+        ('ahad', ?), 
+        ('sudeep', ?)";
 
-if ($conn->query($sql) === TRUE) {
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sss", $hashedPassword, $hashedPassword, $hashedPassword);
+
+if ($stmt->execute()) {
     echo "Admins inserted successfully with hashed passwords!";
 } else {
-    echo "Error: " . $conn->error;
+    echo "Error: " . $stmt->error;
 }
 
+$stmt->close();
 $conn->close();
 ?>

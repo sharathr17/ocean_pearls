@@ -3,12 +3,15 @@ require('vendor/setasign/fpdf/fpdf.php'); // Load FPDF
 session_start();
 include "includes/db_connect.php"; // Database connection
 
+// Prevent accidental output before PDF generation
+ob_clean();
+
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
     die("❌ Please login first.");
 }
 
-// Validate booking ID
+// Validate booking ID      
 if (!isset($_GET['booking_id']) || !is_numeric($_GET['booking_id'])) {
     die("❌ Invalid request.");
 }
@@ -115,7 +118,6 @@ $pdf->SetTextColor(100, 100, 100);
 $pdf->Cell(0, 10, "For any queries, contact us at support@oceanpearls.com", 0, 1, 'C');
 $pdf->SetTextColor(0, 0, 0);
 
-// Output in browser instead of auto-downloading
+// Output the PDF
 $pdf->Output();
 ?>
-

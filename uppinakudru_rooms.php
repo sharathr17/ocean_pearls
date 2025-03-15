@@ -141,13 +141,13 @@
     <div class="room-detail">
         <div class="room-images">
             <div class="image-box">
-                <img src="src/uppinakudru1.jpg" id="mainImage">
+                <img src="assets/uppinakudru-room1.jpg" id="mainImage">
             </div>
             <div class="thumbnails">
-                <img src="src/uppinakudru1.jpg" onclick="changeImage('src/uppinakudru1.jpg')" class="active">
-                <img src="src/uppinakudru2.jpg" onclick="changeImage('src/uppinakudru2.jpg')">
-                <img src="src/uppinakudru3.jpg" onclick="changeImage('src/uppinakudru3.jpg')">
-                <img src="src/uppinakudru4.jpg" onclick="changeImage('src/uppinakudru4.jpg')">
+                <img src="assets/uppinakudru-room1.jpg" onclick="changeImage('assets/uppinakudru-room1.jpg')" class="active">
+                <img src="assets/uppinakudru-room2.jpg" onclick="changeImage('assets/uppinakudru-room2.jpg')">
+                <img src="assets/uppinakudru-room3.jpg" onclick="changeImage('assets/uppinakudru-room3.jpg')">
+                <img src="assets/uppinakudru-room4.jpg" onclick="changeImage('assets/uppinakudru-room4.jpg')">
             </div>
         </div>
 

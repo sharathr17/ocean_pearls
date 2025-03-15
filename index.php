@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Pearls</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="script/script.js"></script>
@@ -14,7 +16,7 @@ session_start();
 include 'header.php';
 // Start the session
 ?>  
-    <section class="hero" style="background: url('src/hero-background1.jpg') center/cover no-repeat;">
+    <section class="hero" style="background: url('assets/hero-background.jpg') center/cover no-repeat;">
     <div class="hero-content">
         <h1>Welcome to Ocean Pearls</h1>
         <p>Find your perfect stay by the sea.</p>
@@ -58,9 +60,10 @@ include 'header.php';
     <div class="rooms-container">
         <div class="room">
             <div class="slideshow-container">
-                <img class="slide koteshwara-slide" src="src/hero-background1.jpg" alt="Koteshwara Room">
-                <img class="slide koteshwara-slide" src="src/hero-background.jpg" alt="Koteshwara Room">
-                <img class="slide koteshwara-slide" src="src/hero-background.jpg" alt="Koteshwara Room">
+                <img class="slide koteshwara-slide" src="assets/koteshwara-room1.jpg" alt="Koteshwara Room">
+                <img class="slide koteshwara-slide" src="assets/koteshwara-room2.jpg" alt="Koteshwara Room">
+                <img class="slide koteshwara-slide" src="assets/koteshwara-room3.jpg" alt="Koteshwara Room">
+                <img class="slide koteshwara-slide" src="assets/koteshwara-room4.jpg" alt="Koteshwara Room">
             </div>
             <h3>Koteshwara</h3>
             <p>Elegant rooms with stunning sea views.</p>
@@ -69,10 +72,11 @@ include 'header.php';
 
         <div class="room">
             <div class="slideshow-container">
-                <img class="slide maravanthe-slide" src="src/hero-background1.jpg" alt="Maravanthe Room">
-                <img class="slide maravanthe-slide" src="src/hero-background.jpg" alt="Maravanthe Room">
-                <img class="slide maravanthe-slide" src="src/hero-background.jpg" alt="Maravanthe Room">
-            </div>
+                <img class="slide maravanthe-slide" src="assets/maravanthe-room1.jpg" alt="Maravanthe Room">
+                <img class="slide maravanthe-slide" src="assets/maravanthe-room2.jpg" alt="Maravanthe Room">
+                <img class="slide maravanthe-slide" src="assets/maravanthe-room3.jpg" alt="Maravanthe Room">
+                <img class="slide maravanthe-slide" src="assets/maravanthe-room4.jpg" alt="Maravanthe Room">
+             </div>
             <h3>Maravanthe</h3>
             <p>Relax in a beachfront paradise.</p>
             <button onclick="location.href='maravanthe_rooms.php'">Book Now</button>
@@ -80,9 +84,10 @@ include 'header.php';
 
         <div class="room">
             <div class="slideshow-container">
-                <img class="slide uppinakudru-slide" src="src/hero-background.jpg" alt="Uppinakudru Room">
-                <img class="slide uppinakudru-slide" src="src/hero-background.jpg" alt="Uppinakudru Room">
-                <img class="slide uppinakudru-slide" src="src/hero-background.jpg" alt="Uppinakudru Room">
+                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room1.jpg" alt="Uppinakudru Room">
+                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room2.jpg" alt="Uppinakudru Room">
+                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room3.jpg" alt="Uppinakudru Room">
+                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room4.jpg" alt="Uppinakudru Room">
             </div>
             <h3>Uppinakudru</h3>
             <p>A perfect getaway surrounded by nature.</p>
@@ -97,12 +102,12 @@ include 'header.php';
     <h2>Gallery</h2>
     <p>Explore our beautiful hotel and surroundings.</p>
     <div class="image-grid">
-        <img src="src/hero-background.jpg" alt="Hotel view">
-        <img src="src/hero-background.jpg" alt="Luxury rooms">
-        <img src="src/hero-background.jpg" alt="Beachfront">
-        <img src="src/hero-background.jpg" alt="Dining area">
-        <img src="src/hero-background.jpg" alt="Swimming pool">
-        <img src="src/hero-background.jpg" alt="Reception">
+        <img src="assets/maravanthe-room1.jpg" alt="Maravanthe Room 1">
+        <img src="assets/uppinakudru-room4.jpg" alt="Uppinakudru Room 4">
+        <img src="assets/maravanthe-room4.jpg" alt="Maravanthe Room 4">
+        <img src="assets/dining.jpg" alt="Dining Area">
+        <img src="assets/maravanthe-room2.jpg" alt="Maravanthe Room 2">
+        <img src="assets/koteshwara-room1.jpg" alt="Koteshwara Room 1">
     </div>
 </section>
 

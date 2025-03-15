@@ -69,6 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Payment - Ocean Pearls</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
         .container { width: 50%; margin: 50px auto; text-align: center; padding: 20px; background: white; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; }

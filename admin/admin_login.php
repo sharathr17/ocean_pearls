@@ -2,17 +2,33 @@
 include "../includes/db_connect.php";
 session_start();
 
+$error = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $admin_name = $_POST["admin_name"];
     $password = $_POST["password"];
 
-    if (($admin_name == "sharath" || $admin_name == "ahad" || $admin_name == "sudeep") && $password == "123abc") {
-        $_SESSION["admin_name"] = $admin_name;
-        header("Location: admin_panel.php");
-        exit();
+    // Fetch admin details from the database
+    $stmt = $conn->prepare("SELECT * FROM admins WHERE admin_name = ?");
+    $stmt->bind_param("s", $admin_name);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+        // Verify the password
+        if (password_verify($password, $row['password'])) {
+            $_SESSION["admin_name"] = $admin_name;
+            header("Location: admin_panel.php");
+            exit();
+        } else {
+            $error = "Invalid login.";
+        }
     } else {
-        echo "<p class='error'>Invalid login.</p>";
+        $error = "Invalid login.";
     }
+
+    $stmt->close();
 }
 ?>
 
@@ -20,6 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <title>Admin Login - Ocean Pearls</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <style>
         body {
             display: flex;
@@ -80,6 +98,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" name="password" placeholder="Password" required><br>
             <button type="submit">Login</button>
         </form>
+        <?php if ($error): ?>
+            <p class="error"><?= htmlspecialchars($error) ?></p>
+        <?php endif; ?>
     </div>
 </body>
 </html>

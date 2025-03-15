@@ -31,10 +31,20 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("si", $status, $booking_id);
 
 if ($stmt->execute()) {
-    echo "<script>alert('✅ Booking updated!'); window.location.href='admin_panel.php';</script>";
+    echo "<script>alert('✅ Booking updated!'); window.location.href='admin_panel.php?tab=pending';</script>";
 } else {
     echo "❌ Error: " . $conn->error;
 }
 ?>
 
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Booking Status - Ocean Pearls</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+</body>
+</html>
+

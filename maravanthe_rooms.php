@@ -141,13 +141,13 @@
     <div class="room-detail">
         <div class="room-images">
             <div class="image-box">
-                <img src="src/hero-background1.jpg" id="mainImage">
+                <img src="assets/maravanthe-room1.jpg" id="mainImage">
             </div>
             <div class="thumbnails">
-                <img src="src/hero-background.jpg" onclick="changeImage('src/hero-background.jpg')" class="active">
-                <img src="src/hero-background1.jpg" onclick="changeImage('src/hero-background1.jpg')">
-                <img src="src/hero-background1.jpg" onclick="changeImage('src/hero-background1.jpg')">
-                <img src="src/hero-background.jpg" onclick="changeImage('src/hero-background.jpg')">
+                <img src="assets/maravanthe-room1.jpg" onclick="changeImage('assets/maravanthe-room1.jpg')" class="active">
+                <img src="assets/maravanthe-room2.jpg" onclick="changeImage('assets/maravanthe-room2.jpg')">
+                <img src="assets/maravanthe-room3.jpg" onclick="changeImage('assets/maravanthe-room3.jpg')">
+                <img src="assets/dining.jpg" onclick="changeImage('assets/dining.jpg')">
             </div>
         </div>
 

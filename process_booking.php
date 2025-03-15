@@ -48,28 +48,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<style>
-    .success, .error {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 15px;
-        text-align: center;
-        margin-top: 20px;
-        border-radius: 5px;
-        width: 50%;
-        margin: auto;
-    }
-    .success {
-        background-color: #d4edda;
-        color: #155724;
-        border: 1px solid #c3e6cb;
-    }
-    .error {
-        background-color: #f8d7da;
-        color: #721c24;
-        border: 1px solid #f5c6cb;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Process Booking - Ocean Pearls</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        .success, .error {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: auto;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
 
 
 

@@ -11,6 +11,9 @@ if (session_status() == PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Pearls</title>
     
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -39,6 +42,8 @@ if (session_status() == PHP_SESSION_NONE) {
             font-weight: bold;
             display: flex;
             align-items: center;
+            text-decoration: none;
+            color: white;
         }
 
         .logo-title img {
@@ -104,10 +109,12 @@ if (session_status() == PHP_SESSION_NONE) {
             color: white;
             padding: 10px;
             transition: 0.3s;
+            text-decoration: none;
         }
 
         .dropdown-menu li a:hover {
             background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
         }
 
         /* Mobile Menu */
@@ -220,10 +227,10 @@ if (session_status() == PHP_SESSION_NONE) {
 <body>
 
 <header>
-    <div class="logo-title">
-        <img src="src/logo.png" alt="Ocean Pearls Logo">
+    <a href="index.php" class="logo-title">
+        <img src="assets/logo.png" alt="Ocean Pearls Logo">
         <span>Ocean Pearls</span>
-    </div>
+    </a>
 
     <div class="menu-toggle" onclick="toggleMenu(this)">
         <div class="bar1"></div>
@@ -235,20 +242,22 @@ if (session_status() == PHP_SESSION_NONE) {
         <ul>
             <li><a href="index.php">Home</a></li>
             <li class="dropdown">
-                <span onclick="toggleDropdown(event)"> Location</span>
+                <span onclick="toggleDropdown(event)">Location</span>
                 <ul class="dropdown-menu">
-                    <li><a href="koteshwara_rooms.php"> Koteshwara</a></li>
-                    <li><a href="maravanthe_rooms.php"> Maravanthe</a></li>
-                    <li><a href="uppinakudru_rooms.php"> Uppinakudru</a></li>
+                    <li><a href="koteshwara_rooms.php">Koteshwara</a></li>
+                    <li><a href="maravanthe_rooms.php">Maravanthe</a></li>
+                    <li><a href="uppinakudru_rooms.php">Uppinakudru</a></li>
                 </ul>
             </li>
-            <li><a href="history.php"> History</a></li>
+            <li><a href="history.php">History</a></li>
 
             <?php if (isset($_SESSION['user_id'])): ?>
-                <li><a href="logout.php"> Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             <?php else: ?>
-                <li><a href="signup.php"> Sign Up</a></li>
+                <li><a href="signup.php">Sign Up</a></li>
             <?php endif; ?>
         </ul>
     </nav>
 </header>
+</body>
+</html>

@@ -56,6 +56,8 @@ if ($tab == 'feedback') {
 <html lang="en">
 <head>
     <title>Admin Panel - Ocean Pearls</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <style>
         * {
             box-sizing: border-box;

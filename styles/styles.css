@@ -200,45 +200,45 @@ html, body {
 /* Gallery */
 .gallery {
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 15px; /* Reduced padding */
     background: linear-gradient(to bottom, #ffffff, #f0f0f0);
 }
 
 .gallery h2 {
-    font-size: 2.2rem;
+    font-size: 2rem; /* Reduced font size */
     font-weight: bold;
     margin-bottom: 10px;
     color: #222;
 }
 
 .gallery p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced font size */
     color: #555;
-    margin-bottom: 35px;
+    margin-bottom: 30px; /* Reduced margin */
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduced min width */
+    gap: 15px; /* Reduced gap */
+    max-width: 1000px; /* Reduced max width */
     margin: auto;
     padding: 0 10px;
 }
 
 .image-grid img {
     width: 100%;
-    height: 220px;
+    height: 200px; /* Reduced height */
     object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px; /* Reduced border radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adjusted box shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-grid img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    filter: brightness(1.1);
+    transform: scale(1.05); /* Reduced scale */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* Adjusted box shadow */
+    filter: brightness(1.05); /* Reduced brightness */
 }
 
 /* Testimonials */

@@ -141,13 +141,13 @@
     <div class="room-detail">
         <div class="room-images">
             <div class="image-box">
-                <img src="src/koteshwara1.jpg" id="mainImage">
+                <img src="assets/koteshwara-room1.jpg" id="mainImage">
             </div>
             <div class="thumbnails">
-                <img src="src/koteshwara1.jpg" onclick="changeImage('src/koteshwara1.jpg')" class="active">
-                <img src="src/koteshwara2.jpg" onclick="changeImage('src/koteshwara2.jpg')">
-                <img src="src/koteshwara3.jpg" onclick="changeImage('src/koteshwara3.jpg')">
-                <img src="src/koteshwara4.jpg" onclick="changeImage('src/koteshwara4.jpg')">
+                <img src="assets/koteshwara-room1.jpg" onclick="changeImage('assets/koteshwara-room1.jpg')" class="active">
+                <img src="assets/koteshwara-room2.jpg" onclick="changeImage('assets/koteshwara-room2.jpg')">
+                <img src="assets/koteshwara-room3.jpg" onclick="changeImage('assets/koteshwara-room3.jpg')">
+                <img src="assets/koteshwara-room4.jpg" onclick="changeImage('assets/koteshwara-room4.jpg')">
             </div>
         </div>
 
