@@ -73,6 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required autocomplete="current-password">
             </div>
+            <p class="forgot-password"><a href="forgot_password.php">Forgot Password?</a></p>
             <button type="submit">Login</button>
         </form>
         <p id="login_message"></p>

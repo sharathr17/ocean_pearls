@@ -76,7 +76,7 @@
 <body>
     <div class="container">
         <a href="index.php" class="logo-title">
-            <img src="src/logo.png" alt="Ocean Pearls Logo">
+            <img src="assets/logo.png" alt="Ocean Pearls Logo">
             <span>Ocean Pearls</span>
         </a>
         <h2>Terms and Conditions</h2>

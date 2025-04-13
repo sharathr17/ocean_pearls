@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";  // Default username for XAMPP
-$password = "";      // Default password for XAMPP (leave empty)
+$username = "root";
+$password = ""; // Ensure this is correct
 $dbname = "ocean_pearls";
 
 // Create connection

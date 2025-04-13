@@ -144,10 +144,10 @@
                 <img src="assets/uppinakudru-room1.jpg" id="mainImage">
             </div>
             <div class="thumbnails">
-                <img src="assets/uppinakudru-room1.jpg" onclick="changeImage('assets/uppinakudru-room1.jpg')" class="active">
-                <img src="assets/uppinakudru-room2.jpg" onclick="changeImage('assets/uppinakudru-room2.jpg')">
-                <img src="assets/uppinakudru-room3.jpg" onclick="changeImage('assets/uppinakudru-room3.jpg')">
-                <img src="assets/uppinakudru-room4.jpg" onclick="changeImage('assets/uppinakudru-room4.jpg')">
+                <img src="assets/uppinakudru-room1.jpg" onmouseover="changeImage(this)" class="active">
+                <img src="assets/uppinakudru-room2.jpg" onmouseover="changeImage(this)">
+                <img src="assets/uppinakudru-room3.jpg" onmouseover="changeImage(this)">
+                <img src="assets/uppinakudru-room4.jpg" onmouseover="changeImage(this)">
             </div>
         </div>
 
@@ -180,12 +180,18 @@
 </div>
 
 <script>
-    function changeImage(src) {
-        document.getElementById("mainImage").src = src;
+    function changeImage(element) {
+        const mainImg = document.getElementById("mainImage");
+        mainImg.src = element.src;
+
+        // Remove 'active' class from all thumbnails
         document.querySelectorAll(".thumbnails img").forEach(img => img.classList.remove("active"));
-        event.target.classList.add("active");
+
+        // Add 'active' to the hovered one
+        element.classList.add("active");
     }
 </script>
+
 
 </body>
 </html>

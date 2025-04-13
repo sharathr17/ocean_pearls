@@ -6,8 +6,7 @@
 -- Generation Time: Mar 15, 2025 at 08:06 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
-CREATE DATABASE IF NOT EXISTS `ocean_pearls` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `ocean_pearls`;
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

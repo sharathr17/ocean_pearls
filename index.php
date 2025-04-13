@@ -11,6 +11,9 @@
     <script defer src="script/script.js"></script>
    </head>
 <body>
+<div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
 <?php
 session_start(); 
 include 'header.php';
@@ -55,40 +58,37 @@ include 'header.php';
 
 <!-- Rooms Section -->
 <section class="rooms">
-    <h2>Our Rooms</h2>
-    <p>Comfortable and luxurious stays at our prime locations.</p>
-    <div class="rooms-container">
-        <div class="room">
-            <div class="slideshow-container">
-                <img class="slide koteshwara-slide" src="assets/koteshwara-room1.jpg" alt="Koteshwara Room">
-                <img class="slide koteshwara-slide" src="assets/koteshwara-room2.jpg" alt="Koteshwara Room">
-                <img class="slide koteshwara-slide" src="assets/koteshwara-room3.jpg" alt="Koteshwara Room">
-                <img class="slide koteshwara-slide" src="assets/koteshwara-room4.jpg" alt="Koteshwara Room">
-            </div>
+        <h2>Our Rooms</h2>
+        <p>Comfortable and luxurious stays at our prime locations.</p>
+        <div class="rooms-container">
+            <div class="room">
+                <div class="slideshow-container">
+                    <img class="slide koteshwara-slide active-slide" src="assets/koteshwara-room1.jpg" alt="Koteshwara Room">
+                    <img class="slide koteshwara-slide" src="assets/koteshwara-room2.jpg" alt="Koteshwara Room">
+                    <img class="slide koteshwara-slide" src="assets/koteshwara-room3.jpg" alt="Koteshwara Room">
+                </div>
             <h3>Koteshwara</h3>
             <p>Elegant rooms with stunning sea views.</p>
             <button onclick="location.href='koteshwara_rooms.php'">Book Now</button>
         </div>
 
         <div class="room">
-            <div class="slideshow-container">
-                <img class="slide maravanthe-slide" src="assets/maravanthe-room1.jpg" alt="Maravanthe Room">
-                <img class="slide maravanthe-slide" src="assets/maravanthe-room2.jpg" alt="Maravanthe Room">
-                <img class="slide maravanthe-slide" src="assets/maravanthe-room3.jpg" alt="Maravanthe Room">
-                <img class="slide maravanthe-slide" src="assets/maravanthe-room4.jpg" alt="Maravanthe Room">
-             </div>
+                <div class="slideshow-container">
+                    <img class="slide maravanthe-slide active-slide" src="assets/maravanthe-room1.jpg" alt="Maravanthe Room">
+                    <img class="slide maravanthe-slide" src="assets/maravanthe-room2.jpg" alt="Maravanthe Room">
+                    <img class="slide maravanthe-slide" src="assets/maravanthe-room3.jpg" alt="Maravanthe Room">
+                </div>
             <h3>Maravanthe</h3>
             <p>Relax in a beachfront paradise.</p>
             <button onclick="location.href='maravanthe_rooms.php'">Book Now</button>
         </div>
 
         <div class="room">
-            <div class="slideshow-container">
-                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room1.jpg" alt="Uppinakudru Room">
-                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room2.jpg" alt="Uppinakudru Room">
-                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room3.jpg" alt="Uppinakudru Room">
-                <img class="slide uppinakudru-slide" src="assets/uppinakudru-room4.jpg" alt="Uppinakudru Room">
-            </div>
+                <div class="slideshow-container">
+                    <img class="slide uppinakudru-slide active-slide" src="assets/uppinakudru-room1.jpg" alt="Uppinakudru Room">
+                    <img class="slide uppinakudru-slide" src="assets/uppinakudru-room2.jpg" alt="Uppinakudru Room">
+                    <img class="slide uppinakudru-slide" src="assets/uppinakudru-room3.jpg" alt="Uppinakudru Room">
+                </div>
             <h3>Uppinakudru</h3>
             <p>A perfect getaway surrounded by nature.</p>
             <button onclick="location.href='uppinakudru_rooms.php'">Book Now</button>
@@ -99,17 +99,35 @@ include 'header.php';
 
     
 <section class="gallery">
-    <h2>Gallery</h2>
-    <p>Explore our beautiful hotel and surroundings.</p>
-    <div class="image-grid">
-        <img src="assets/maravanthe-room1.jpg" alt="Maravanthe Room 1">
-        <img src="assets/uppinakudru-room4.jpg" alt="Uppinakudru Room 4">
-        <img src="assets/maravanthe-room4.jpg" alt="Maravanthe Room 4">
-        <img src="assets/dining.jpg" alt="Dining Area">
-        <img src="assets/maravanthe-room2.jpg" alt="Maravanthe Room 2">
-        <img src="assets/koteshwara-room1.jpg" alt="Koteshwara Room 1">
-    </div>
-</section>
+        <h2>Gallery</h2>
+        <p>Explore our beautiful hotel and surroundings.</p>
+        <div class="image-grid">
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/maravanthe-room1.jpg" alt="Maravanthe Room 1">
+            </div>
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/uppinakudru-room4.jpg" alt="Uppinakudru Room 4">
+            </div>
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/maravanthe-room4.jpg" alt="Maravanthe Room 4">
+            </div>
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/dining.jpg" alt="Dining Area">
+            </div>
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/maravanthe-room2.jpg" alt="Maravanthe Room 2">
+            </div>
+            <div class="image-loader">
+                <div class="spinner"></div>
+                <img src="assets/koteshwara-room1.jpg" alt="Koteshwara Room 1">
+            </div>
+        </div>
+    </section>
 
 
     

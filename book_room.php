@@ -208,7 +208,18 @@ $selected_location = isset($_GET['location']) ? $_GET['location'] : '';
     <p>❌ No available rooms at this time. Please try again later.</p>
 <?php endif; ?>
 </div>
+<script>
+    window.onload = function() {
+        // Auto-trigger price calculation if a room is pre-selected
+        const roomSelect = document.getElementById('room_id');
+        const selectedRoomOption = roomSelect.options[roomSelect.selectedIndex];
 
+        if (selectedRoomOption.value) {
+            document.getElementById('room_price').value = selectedRoomOption.getAttribute('data-price');
+            calculatePrice();
+        }
+    };
+</script>
 </body>
 </html>
 

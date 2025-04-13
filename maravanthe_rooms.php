@@ -144,10 +144,10 @@
                 <img src="assets/maravanthe-room1.jpg" id="mainImage">
             </div>
             <div class="thumbnails">
-                <img src="assets/maravanthe-room1.jpg" onclick="changeImage('assets/maravanthe-room1.jpg')" class="active">
-                <img src="assets/maravanthe-room2.jpg" onclick="changeImage('assets/maravanthe-room2.jpg')">
-                <img src="assets/maravanthe-room3.jpg" onclick="changeImage('assets/maravanthe-room3.jpg')">
-                <img src="assets/dining.jpg" onclick="changeImage('assets/dining.jpg')">
+                <img src="assets/maravanthe-room1.jpg" onmouseover="changeImage(this)" class="active">
+                <img src="assets/maravanthe-room2.jpg" onmouseover="changeImage(this)">
+                <img src="assets/maravanthe-room3.jpg" onmouseover="changeImage(this)">
+                <img src="assets/dining.jpg" onmouseover="changeImage(this)">
             </div>
         </div>
 
@@ -183,13 +183,15 @@
 </div>
 
 <script>
-    function changeImage(src) {
-        document.getElementById("mainImage").src = src;
+    function changeImage(element) {
+        const mainImg = document.getElementById("mainImage");
+        mainImg.src = element.src;
 
-        let thumbnails = document.querySelectorAll(".thumbnails img");
-        thumbnails.forEach(img => img.classList.remove("active"));
+        // Remove 'active' class from all thumbnails
+        document.querySelectorAll(".thumbnails img").forEach(img => img.classList.remove("active"));
 
-        event.target.classList.add("active");
+        // Add 'active' to the hovered one
+        element.classList.add("active");
     }
 </script>
 
